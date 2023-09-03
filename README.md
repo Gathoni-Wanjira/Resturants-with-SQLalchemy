@@ -169,4 +169,4 @@ The following have been used on this project:
 
 ## Copyright
 
-Released under the MIT License. See the [LICENSE]https://github.com/Gathoni-Wanjira/Resturants-with-SQLalchemy file.
+Released under the MIT License. See the [LICENSE](https://github.com/Gathoni-Wanjira/Resturants-with-SQLalchemy) file.
