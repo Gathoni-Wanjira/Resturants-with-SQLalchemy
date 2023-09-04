@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine;
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
@@ -27,6 +27,18 @@ class Customer(Base):
     def __repr__(self):
         return f"Customers firstname : {self.first_name}, price: {self.last_name}"
         
+    
+class Review(Base):
+    __tablename__ = "reviews"
+
+    id = Column(Integer(), primary_key = True)
+    star_ratings= Column(Integer())
+    
+    
+    restaurant_id = Column(Integer(), ForeignKey('restaurants.id'))
+    customer_id = Column(Integer(), ForeignKey('customers.id'))
+    
+    
     
     
     
