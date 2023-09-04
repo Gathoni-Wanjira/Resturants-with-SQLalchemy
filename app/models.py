@@ -13,6 +13,21 @@ class Restaurant(Base):
     name = Column(String(), index = True)
     price = Column(Integer())
     
+    def __repr__(self):
+        return f"Resturant name : {self.name}, price: {self.price}"
+        
+        
+class Customer(Base):
+    __tablename__ = "customers"
+    
+    id = Column(Integer(), primary_key = True)
+    first_name = Column(String(), index = True)
+    last_name = Column(String())
+    
+    def __repr__(self):
+        return f"Customers firstname : {self.first_name}, price: {self.last_name}"
+        
+    
     
     
     
