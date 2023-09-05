@@ -51,10 +51,3 @@ class Review(Base):
     
     restaurant_id = Column(Integer(), ForeignKey('restaurants.id'))
     customer_id = Column(Integer(), ForeignKey('customers.id'))
-    
-    
-    
-    
-    
-    
-    
